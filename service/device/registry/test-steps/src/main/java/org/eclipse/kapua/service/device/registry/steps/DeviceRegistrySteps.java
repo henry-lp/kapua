@@ -2075,7 +2075,7 @@ public class DeviceRegistrySteps extends TestBase {
     @Given("^I wait for (\\d+) seconds?$")
     public void waitForSpecifiedTime(int delay) throws InterruptedException {
 
-        Thread.sleep(delay * 1000);
+        Thread.sleep((long) delay * 1000);
     }
 
     @When("^I search for a connection from the device \"(.+)\" in account \"(.+)\"$")

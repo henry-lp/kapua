@@ -1924,7 +1924,7 @@ public class JobServiceSteps extends TestBase {
                 assertEquals(stepIndex, targetFound.getStepIndex());
                 break;
             } else {
-                Thread.sleep(secondsToTry * 1000);
+                Thread.sleep((long) secondsToTry * 1000);
             }
         }
     }
